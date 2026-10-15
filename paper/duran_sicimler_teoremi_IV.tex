@@ -1,17 +1,15 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{setspace}
 \usepackage{url}
 
-% babel-turkish asilmasina karsi dogrudan Turkce tanimlar:
-\renewcommand{\abstractname}{Özet}
-\renewcommand{\refname}{Kaynakça}
-
 \onehalfspacing
-\setlength{\emergencystretch}{3em}
 
 \title{\textbf{Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği} \\[0.3cm]
 \large (Boyutsal Parçalanma, Olay Ufku Halka Yakıtı Mekanizması, Bilgi Paradoksunun Çözümü ve $r=0$ Tekilliğinin Ortadan Kaldırılması — Genişletilmiş Tam Sürüm)}
@@ -19,6 +17,7 @@
 \date{Ekim 2026}
 
 \begin{document}
+\shorthandoff{=}
 
 \maketitle
 
@@ -102,7 +101,7 @@ Başlangıçta $r \gg r_s$ bölgesinde serbest düşen bir sicimin $n$'inci harm
 E_{\text{sicim}, n}(\tau) = \hbar \omega_n(\tau) = \hbar \omega_{n,0} \, e^{-\Phi(\tau)} = \hbar \omega_{n,0} \, \tau^{+h} \xrightarrow{\tau \to 0} 0
 \end{equation}
 
-Genel görelilikte toplam enerji-momentum tensörünün kovaryant korunumu ($\nabla_\mu \left( T^{\mu\nu}_{\text{sicim}} + T^{\mu\nu}_{\text{girdap}} \right) = 0$) mutlak bir yasadır. Dolayısıyla sicimin soyulma sırasında kaybettiği içsel özgül enerji ($-\frac{d E_{\text{sicim}}}{d\tau} > 0$) yok olamaz; \textbf{sıyrılan Işık Boyutu ($\mathcal{L}_{\text{ışık}}$) aracılığıyla doğrudan kara delik girdabının dönme ve makaslama enerjisine (Girdap Yakıtına) aktarılır!}
+Genel görelilikte toplam enerji-momentum tensörünün kovaryant korunumu ($\nabla_\mu ( T^{\mu\nu}_{\text{sicim}} + T^{\mu\nu}_{\text{girdap}} )$ $= 0$) mutlak bir yasadır. Dolayısıyla sicimin soyulma sırasında kaybettiği içsel özgül enerji ($-\frac{d E_{\text{sicim}}}{d\tau} > 0$) yok olamaz; \textbf{sıyrılan Işık Boyutu ($\mathcal{L}_{\text{ışık}}$) aracılığıyla doğrudan kara delik girdabının dönme ve makaslama enerjisine (Girdap Yakıtına) aktarılır!}
 
 Birim öz-zamanda sicimden sökülüp kara delik girdabına yakıt olarak pompalanan güç ($\mathcal{P}_{\text{yakıt}}$), Denklem (4)'ün öz-zamana göre türevinden doğrudan elde edilir:
 
@@ -169,7 +168,7 @@ kara deliğin tam merkezinde ($r \to 0$) uzay-zaman eğriliğinin (Kretschmann s
 
 Oysa \textit{Duran Sicimler Teoremi}'ne göre madde, olay ufkundaki girdap makaslamasından geçtiğinde üzerindeki kinetik ışık/enerji derisi soyulmuş ve içerideki sicimlerin titreşimi tamamen sıfırlanmıştır ($\omega_n = 0$) [1, 2, 3]!
 
-Olay ufkunun altına geçen bir sicim ağının enerji-momentum tensörü $T^\mu_\nu = \text{diag}(-\rho c^2, P_r, P_\perp, P_\perp)$, Polyakov eylem integralinden türetildiğinde iki bileşenden oluşur:
+Olay ufkunun altına geçen bir sicim ağının enerji-momentum tensörü $T^\mu_\nu$ $= \text{diag}(-\rho c^2,$ $P_r, P_\perp, P_\perp)$, Polyakov eylem integralinden türetildiğinde iki bileşenden oluşur:
 \begin{enumerate}
     \item \textbf{Kinetik Titreşim Basıncı ($P_{\text{kinetik}}$):} Sicimin zamana bağlı salınımlarından ($\dot{X}^2 \propto \omega_n^2$) doğan pozitif basınçtır. Soyulma sonucunda $\omega_n \to 0$ olduğundan, ufkun altında bu terim \textbf{tamamen sıfırlanır}:
     \begin{equation}
