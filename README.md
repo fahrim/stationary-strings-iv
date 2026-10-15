@@ -39,7 +39,7 @@ pdflatex -interaction=nonstopmode duran_sicimler_teoremi_IV_EN.tex
   title  = {Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği},
   year   = {2026},
   doi    = {10.5281/zenodo.YYYYYYY},
-  url    = {https://github.com/KULLANICI/duran-sicimler-IV}
+  url    = {https://github.com/fahrim/duran-sicimler-IV}
 }
 ```
 
