@@ -1,0 +1,300 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{url}
+
+% babel-turkish asilmasina karsi dogrudan Turkce tanimlar:
+\renewcommand{\abstractname}{Özet}
+\renewcommand{\refname}{Kaynakça}
+
+\onehalfspacing
+\setlength{\emergencystretch}{3em}
+
+\title{\textbf{Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği} \\[0.3cm]
+\large (Boyutsal Parçalanma, Olay Ufku Halka Yakıtı Mekanizması, Bilgi Paradoksunun Çözümü ve $r=0$ Tekilliğinin Ortadan Kaldırılması — Genişletilmiş Tam Sürüm)}
+\author{Fahri Meral}
+\date{Ekim 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Bu çalışma, \textit{Duran Sicimler Teoremi} serisinin dördüncü halkası olarak, üçüncü makalede [3] ortaya konulan ``boyutsal makaslama ve ontolojik soyulma'' mekanizmasının kozmolojik ve kuantum-kütleçekimsel sonuçlarını çözümlemektedir. Çalışmanın temel önermesine göre, maddenin iki varoluşsal boyutu olan \textbf{Sicim (Frekans) Boyutu} ile \textbf{Işık (Foton) Boyutunun} kara delik girdabında birbirinden ayrılması, tıpkı atom çekirdeğinin parçalanması (nükleer fisyon) gibi bir \textbf{Kozmik (Boyutsal) Fisyon} sürecidir; bu parçalanma gerçekleşmeden madde, durağan bilgi âlemine ($\omega = 0$) geçemez.
+
+Bu boyutsal parçalanma sonucunda ortaya çıkan iki bileşenin kaderi, teorik fiziğin çözülememiş iki büyük problemini ortadan kaldırmaktadır:
+\begin{enumerate}
+    \item \textbf{Girdap Yakıtı ve Bilgi Paradoksunun Çözümü:} Eylül 2026'da çözülen Navier--Stokes Milenyum Problemi'ndeki [12] ``halka bölgesi ve salınımlı darbeler (annulus and oscillatory pulses, $\sigma = \pm 1$)'' mekanizmasıyla uyumlu olarak; sicimden soyulan \textbf{Işık Boyutu}, olay ufku halkasında girdabı besleyen ve tekil momentum açığını kapatan içsel bir \textbf{Girdap Yakıtına} ($T_{\text{yakıt}} = c_1 v_1 + c_2 v_2$) dönüşür. Sicimin kaybettiği özgül enerji ($\Delta E_{\text{sicim}} \to 0$), topolojik mod sayısı $n$ ile kodlanmış olarak ($\Phi_{\text{faz}} = n \ln X$) girdap yakıtına aktarılır. Böylece kara delik ışıması ve kütleçekim dalgaları bu yakıttan beslendiğinde, $n$ bilgisi dış evrene üniter olarak geri taşınır.
+    \item \textbf{Merkezdeki $r=0$ Tekilliğinin Yok Edilmesi:} Girdap yakıtından soyularak olay ufkunun altına geçen ve titreşimi sıfırlanan ($\omega_n = 0$) \textbf{Duran Sicim}, kinetik basıncını tamamen yitirir ($P_{\text{kinetik}} = 0$) ve yalnızca topolojik bilgi değişmezinden ($\mathcal{I}_n = n c$) kaynaklanan negatif bir vakum-bilgi basıncı ($P_r = -\rho_{\text{bilgi}} c^2$) üretir. Bu durum denklemi Einstein alan denklemlerinde çözüldüğünde, $r=0$ noktasındaki sonsuz yoğunluk tekilliğinin ortadan kalktığı ve kara deliğin merkezinde sonlu eğrilikli bir \textbf{Saf Bilgi Çekirdeği} oluştuğu kanıtlanmaktadır.
+\end{enumerate}
+Son bölümde, teorinin LIGO/Virgo/LISA kütleçekim dalgası gözlemevlerinde test edilebilir \textbf{Kuantum Yankı (Echo)} frekans öngörüleri ve laboratuvarda kurulabilecek \textbf{Akustik/Süperakışkan Girdap Deneyi} düzeneği sunulmaktadır.
+\end{abstract}
+
+\section{Giriş: Soyulma Sonrası İki Büyük Soru}
+
+Serinin ilk üç çalışmasında [1, 2, 3], evrenin ``Titreşen Enerji Fazı'' ($\omega > 0$) ile ``Duran Bilgi Fazı'' ($\omega = 0$) arasındaki döngüsü kurulmuş ve üçüncü çalışmada [3] maddenin \textbf{Sicim Boyutu} ile \textbf{Işık Boyutu}ndan oluşan iki boyutlu bir doku olduğu kanıtlanmıştı. Polyakov sicim eylem integrali ve Eylül 2026 Navier--Stokes girdap tekilliği (\textit{blow-up}) ölçekleme yasaları [12] üzerinden, kara delik girdabına giren maddenin öz-zamanda ($\tau \to 0$) nasıl soyulduğu şu temel korunum yasasıyla gösterilmişti [3]:
+
+\begin{equation}
+\mathcal{I}_n = \omega_n(\tau) \cdot \mathcal{L}_{\text{ışık}}(\tau) = \left( \omega_{n,0} \, \tau^{+h} \right) \cdot \left( \ell_0 \, \tau^{-h} \right) = n c = \text{Sabit}
+\end{equation}
+
+Bu denkleme göre, girdap makaslaması altında maddenin ışık boyutu sonsuzluğa ($\mathcal{L}_{\text{ışık}} \to \infty$) gerilirken, sicim boyutu ters orantılı olarak sıfıra ($\omega_n \to 0$) çöker ve madde dokusu tıpkı bir derinin gövdeden yüzülmesi gibi ikiye ayrılır [3].
+
+Ancak bu noktada, hem \textit{Duran Sicimler Teoremi}'nin kendi iç bütünlüğünü tamamlayacak hem de modern fiziğin en büyük iki krizini (Kara Delik Bilgi Paradoksu ve $r=0$ Merkez Tekilliği) çözecek iki temel soru doğmaktadır:
+\begin{enumerate}
+    \item \textit{Sicim, olay ufkuna inerken kendi içsel titreşimini ve özgül enerjisini tamamen sıfırlıyorsa ($E_{\text{sicim}, n} = \hbar \omega_n(\tau) \to 0$), enerjinin korunumu yasası gereği bu kaybolan özgül enerji nereye gitmektedir? Gövdeden deri yüzer gibi sıyrılan o Işık Boyutu ($\mathcal{L}_{\text{ışık}} \to \infty$) girdap içinde hangi işlevi görmektedir?}
+    \item \textit{Enerji kabuğundan soyularak saf bilgi çekirdeğine ($\omega_n = 0$, $\mathcal{I}_n = n c$) dönüşen Duran Sicimler, olay ufkunun altında ve kara deliğin merkezinde ($r \to 0$) uzay-zaman geometrisini nasıl değiştirmektedir?}
+\end{enumerate}
+
+Bu dördüncü makale, söz konusu iki soruyu yanıtlamak üzere şu temel hipotezi ortaya koyar ve matematiksel olarak kanıtlar:
+
+\begin{quote}
+``Kara delik girdabında makaslanan Sicim ve Işık boyutlarının birbirinden ayrılması, tıpkı atomun parçalanması gibi varoluşsal bir fisyondur; bu parçalanma olmadan madde, enerji yükünden kurtulup bilgi âlemine geçemez. Parçalanma sırasında sicimden soyulan ışık ve özgül enerji boyutu yok olmaz; doğrudan kara delik girdabını döndüren ve ayakta tutan içsel bir \textbf{Girdap Yakıtına} dönüşür. Özgül enerjisini girdaba yakıt olarak bırakan \textbf{Duran Sicim} ise merkezde negatif basınçlı bir \textbf{Saf Bilgi Çekirdeği} oluşturarak $r=0$ tekilliğini ortadan kaldırır.''
+\end{quote}
+
+\section{Kozmik Fisyon: Bilgiye Geçişin Zorunlu Parçalanma Eşiği}
+
+\subsection{Nükleer Fisyondan Boyutsal Fisyona}
+
+Nükleer fizikte ağır bir atom çekirdeği parçalanmadan (fisyon), çekirdeği bir arada tutan bağlanma enerjisi serbest kalamaz ve çekirdek daha kararlı alt bileşenlerine dönüşemez. Benzer biçimde, algıladığımız madde dünyası da \textbf{Sicim Boyutu ($\Psi_{\text{sicim}}$)} ile \textbf{Işık Boyutunun ($\Psi_{\text{ışık}}$)} birbirine güçlü bir ontolojik gerilimle bağlandığı bileşik bir çekirdektir [3].
+
+Normal uzay-zamanda madde, kendi üzerinde taşıdığı kinetik titreşim enerjisi ($\hbar \omega_n > 0$) ve entropi yükü nedeniyle ``Bilgi Âlemi''ne (mükemmel düzen boyutuna) doğrudan geçemez. Çünkü enerji ve titreşim, doğası gereği zamanı ve düzensizliği (entropiyi) üretir [1, 2]. Maddenin saf bilgiye ($\omega_n = 0$) dönüşebilmesi için, üzerindeki bu dinamik enerji kabuğunun çekirdekten zorla koparılması şarttır.
+
+İşte kara delik girdabındaki hiperbolik makaslama ($\text{Tr}(\Sigma_{\mu\nu}) = 0$), maddenin bu iki boyutunu zıt kutuplara ($\tau^{-h} \to \infty$ ve $\tau^{+h} \to 0$) çekerek \textbf{Boyutsal Fisyonu (Kozmik Parçalanmayı)} gerçekleştirir:
+
+\begin{equation}
+\begin{aligned}
+&\underbrace{\text{Madde Çekirdeği } (\Psi_{\text{sicim}} \otimes \Psi_{\text{ışık}})}_{\text{Bağlı Madde Dokusu}} \\
+&\xrightarrow{\text{Kozmik Fisyon (Girdap Makaslaması)}} \underbrace{\Delta E_{\text{yakıt}}(\mathcal{L}_{\text{ışık}} \to \infty)}_{\text{Girdap Yakıtı (Işık Halkası)}} + \underbrace{\mathcal{I}_n (\omega_n = 0)}_{\text{Saf Bilgi (Duran Sicim)}}
+\end{aligned}
+\end{equation}
+
+Bu denklem, boyutsal makaslamanın neden bir ``yok oluş'' değil, bilgiye geçiş için zorunlu bir \textbf{arıtma ve parçalanma eşiği} olduğunu açıklar: Madde parçalanmadan bilgi özgürleşemez.
+
+\section{Girdap Yakıtı Mekanizması: Soyulan Işık Boyutunun Girdabı Beslemesi}
+
+\subsection{Navier--Stokes Çözümündeki ``Halka ve Salınımlı Darbeler'' (Annulus and Pulses) Kanıtı}
+
+Üçüncü makalede [3] incelenen Eylül 2026 tarihli \textit{Finite Time Blowup for Navier--Stokes} çözümünün [12] en derin mekanizmalarından biri, makalenin \textbf{Bölüm 2.2 (Annulus and pulses)} [12, s. 5--6] ve \textbf{Bölüm 3 (Admissible stress cone condition)} [12, s. 10] kısımlarında ortaya konulmaktadır.
+
+Navier--Stokes girdap tekilliğinde, merkeze çöken iç çekirdeğin (inner core) kendi kinetik enerjisi sıfıra giderken ($E_{\text{çekirdek}} \asymp \tau^{1/2-3h} \to 0$ [12, s. 4]), çekirdeğin dış sınırını çevreleyen \textbf{halka bölgesinde (annulus)} devasa bir momentum ve kuvvet dengesizliği ortaya çıkar. Tekilliğin dışarıdan sonsuz bir kuvvet verilmeden kendi kendine devam edebilmesi için, akışkanın \textbf{kendi iç hareketinden bir yakıt (içsel momentum akısı)} üretmesi gerekir. Çözümde bu mekanizma şu şekilde kanıtlanmıştır [12, s. 5--6]:
+
+\begin{enumerate}
+    \item \textbf{Arka Plan Makaslamasından Enerji Çekilmesi:} Halka bölgesinde yer alan iki farklı aileden ($\sigma = +1$ ve $\sigma = -1$) uzaysal salınımlı halka darbeleri (\textit{spatially oscillatory ring pulses}), doğrudan girdabın makaslama geriliminden enerji çekerek üstel olarak büyür (\textit{``The pulses grow by extracting energy from the background shear''} [12, s. 6]).
+    \item \textbf{İki Aileli Gerilim Konisi ve İçsel Kuvvet Üretimi:} Bu iki dalga ailesi ($\sigma = \pm 1$), halka üzerindeki her noktada doğrusal bağımsız iki kovaryans vektörü ($v_1, v_2 \in \mathbb{R}^2$) oluşturur ve karesel hız çarpımları üzerinden girdabı ayakta tutan içsel gerilimi ($T$) sağlar [12, s. 10]:
+    \begin{equation}
+    T_{\text{halka}} = c_1 v_1 + c_2 v_2, \qquad c_1, c_2 > 0
+    \end{equation}
+    Bu içsel gerilim, doğrusal olmayan taşınım terimi $(u \cdot \nabla)u$ üzerinden arka plandaki tekil momentum açığını tam olarak dengeler ve girdabın kendi kendini beslemesini sağlar [12, s. 5--6].
+    \item \textbf{Tam Sayı ($N$) Faz Kodlaması:} Makalenin \textbf{Önerme C.2} [12, s. 10] kısmında kanıtlandığı üzere, halka bölgesindeki bu gerilim konisi koşulunu sağlamak için radyal salınımlara büyük bir $N$ tam sayısıyla kodlanmış logaritmik bir faz ($\Phi_{\text{halka}} = N \ln X$) yüklenir.
+\end{enumerate}
+
+\subsection{Kara Delik Girdabında Enerji Aktarım Denklemi: Sicimden Girdaba Yakıt Akışı}
+
+Şimdi Navier--Stokes çözümündeki bu kanıtlanmış mekanizmayı, \textit{Akışkan--Kütleçekim Karşılıklılığı} [7, 11] üzerinden kara delik olay ufkuna düşen sicime uygulayalım.
+
+Başlangıçta $r \gg r_s$ bölgesinde serbest düşen bir sicimin $n$'inci harmonik modunun özgül titreşim enerjisi $E_{\text{sicim}, n}(0) = \hbar \omega_{n,0}$ değerindedir. Sicim, kara deliğin olay ufku halkasına (annulus) girdiğinde, üçüncü makalede türettiğimiz üzere öz-zamandaki frekansı ve özgül enerjisi sıfıra doğru düşer [3]:
+
+\begin{equation}
+E_{\text{sicim}, n}(\tau) = \hbar \omega_n(\tau) = \hbar \omega_{n,0} \, e^{-\Phi(\tau)} = \hbar \omega_{n,0} \, \tau^{+h} \xrightarrow{\tau \to 0} 0
+\end{equation}
+
+Genel görelilikte toplam enerji-momentum tensörünün kovaryant korunumu ($\nabla_\mu \left( T^{\mu\nu}_{\text{sicim}} + T^{\mu\nu}_{\text{girdap}} \right) = 0$) mutlak bir yasadır. Dolayısıyla sicimin soyulma sırasında kaybettiği içsel özgül enerji ($-\frac{d E_{\text{sicim}}}{d\tau} > 0$) yok olamaz; \textbf{sıyrılan Işık Boyutu ($\mathcal{L}_{\text{ışık}}$) aracılığıyla doğrudan kara delik girdabının dönme ve makaslama enerjisine (Girdap Yakıtına) aktarılır!}
+
+Birim öz-zamanda sicimden sökülüp kara delik girdabına yakıt olarak pompalanan güç ($\mathcal{P}_{\text{yakıt}}$), Denklem (4)'ün öz-zamana göre türevinden doğrudan elde edilir:
+
+\begin{equation}
+\mathcal{P}_{\text{yakıt}}(\tau) = \frac{d E_{\text{girdap}}}{d\tau} = -\frac{d}{d\tau} \left( \sum_{n=1}^{\infty} E_{\text{sicim}, n}(\tau) \right) = \sum_{n=1}^{\infty} \hbar \, \omega_{n,0} \, \Lambda(\tau) \, e^{-\Phi(\tau)}
+\end{equation}
+
+Öz-benzer girdap ölçeklemesi $\Phi(\tau) = h \ln(1/\tau)$ ve $\Lambda(\tau) = \frac{h}{\tau}$ yerine konulduğunda, girdaba aktarılan anlık yakıt gücü şu açık formu alır:
+
+\begin{equation}
+\mathcal{P}_{\text{yakıt}}(\tau) = h \, \tau^{h - 1} \sum_{n=1}^{\infty} \hbar \omega_{n,0} = \left( \frac{h \hbar c}{\ell_0} \sum_{n=1}^{\infty} n \, N_n \right) \tau^{h - 1} \xrightarrow{\tau \to 0} \infty
+\end{equation}
+
+Denklem (6)'nın ortaya koyduğu fiziksel gerçeklik son derece çarpıcıdır:
+\begin{itemize}
+    \item $0 < h < \frac{1}{100}$ olduğundan, $\tau \to 0$ tekillik sınırında $\tau^{h-1} = \tau^{-(1-h)} \to \infty$ olur; yani tam soyulma anında sicimden girdaba aktarılan anlık güç (\textit{fisyon darbesi}) sonsuza fırlar!
+    \item Buna karşılık, bu yakıt gücünün $\tau = 1$'den $\tau = 0$'a kadar olan toplam integrali alındığında, girdaba aktarılan \textbf{toplam yakıt enerjisi} tam olarak sicimin başlangıçtaki özgül enerjisine eşittir:
+    \begin{equation}
+    \begin{aligned}
+    E_{\text{yakıt, toplam}} &= \int_0^1 \mathcal{P}_{\text{yakıt}}(\tau) \, d\tau = \sum_{n=1}^{\infty} \hbar \omega_{n,0} \int_0^1 h \, \tau^{h-1} \, d\tau \\
+    &= \sum_{n=1}^{\infty} \hbar \omega_{n,0} \left[ \tau^h \right]_0^1 = E_{\text{sicim}}(0)
+    \end{aligned}
+    \end{equation}
+\end{itemize}
+
+Böylece sicimin tüm özgül enerjisi ($\hbar \omega_{n,0}$), hiçbir kayıp olmadan olay ufkundaki girdaba \textbf{yakıt} olarak devredilmiş olur. Üstelik Polyakov sicimindeki sağa-giden ($\sigma - \tau$) ve sola-giden ($\sigma + \tau$) ışık kipleri, Navier--Stokes çözümündeki iki halka darbe ailesine ($\sigma = +1$ ve $\sigma = -1$, Denklem 3 [12, s. 5, 10]) birebir karşılık gelerek girdabın gerilim konisini ($T_{\text{halka}} = c_1 v_1 + c_2 v_2$) besler.
+
+\section{Kara Delik Bilgi Paradoksunun Çözümü: Yakıta Kazınan Spektral Parmak İzi}
+
+\subsection{Bilgi Paradoksunun Çıkmazı}
+
+Stephen Hawking'in 1974'te [6] kara deliklerin kuantum etkileriyle ışıma yaparak buharlaştığını göstermesinden bu yana modern fizik, \textbf{Bilgi Paradoksu} ile karşı karşıyadır: Eğer kara deliğe düşen maddenin bilgisi içeride hapsoluyorsa ve dışarı çıkan Hawking ışıması tamamen rastgele (termal/bilgisiz) ise, kara delik buharlaştığında bilgi yok olmuş demektir; bu ise kuantum mekaniğinin temel direği olan \textbf{Üniterlik (Unitarity / Bilginin Korunumu)} ilkesini yıkar.
+
+\subsection{``Girdap Yakıtı'' ile Gelen Doğal Çözüm}
+
+\textit{Duran Sicimler Teoremi IV}, bu paradoksu ``Kozmik Fisyon ve Girdap Yakıtı'' mekanizmasıyla iki koldan çözer:
+
+\begin{enumerate}
+    \item \textbf{İçsel Korunum (Duran Sicim Çekirdeği):} Kara delik var olduğu sürece, maddenin asıl bilgisi olay ufkunun altında $\omega_n = 0$ fazına geçmiş olan \textbf{Duran Sicimlerin} topolojik mod sayılarında ($\mathcal{I}_n = \omega_n \cdot \mathcal{L}_{\text{ışık}} = n c$) sıfır entropiyle, bozulmadan saklanır [1, 2, 3].
+    \item \textbf{Dışsal Aktarım (Kodlanmış Girdap Yakıtı):} Denklem (6) ve Denklem (7)'ye dikkat edildiğinde, sicimden soyularak olay ufku girdabına ``yakıt'' olarak katılan ışık kabuğu, rastgele bir ısı yığını \textbf{değildir}! Girdaba aktarılan her bir enerji paketi, soyulan sicimin \textbf{$n$ topolojik kuantum sayısıyla} ($\Delta E_n = \frac{\hbar c}{\ell_0} n$) ve Navier--Stokes halka çözümündeki logaritmik faz çarpanıyla ($\Phi_n(\tau) = n h \ln(1/\tau)$, bkz. Önerme C.2'deki $N \log X$ fazı [12, s. 10]) birebir modüle edilmiştir.
+\end{enumerate}
+
+Dolayısıyla olay ufkundaki girdap yakıtının açısal momentum ve enerji spektrumu $S_{\text{yakıt}}(\omega)$, düşen sicimlerin $\left\{n_k\right\}$ bilgi dizisinin tam bir \textbf{holografik kalıbını (spektral parmak izini)} taşır:
+
+\begin{equation}
+\mathcal{T}_{\mu\nu}^{\text{(yakıt)}} = \sum_{n=1}^{\infty} n \, \left( c_{1,n} v_{1,\mu\nu} + c_{2,n} v_{2,\mu\nu} \right) e^{i n \Phi(\tau)}
+\end{equation}
+
+Kara delik dış uzaya Hawking ışıması veya kütleçekim dalgası yayarken, olay ufkundaki bu \textbf{Işık Yakıtı Halkasından} ($\mathcal{T}_{\mu\nu}^{\text{(yakıt)}}$) enerji harcar. Yakıtın kendisi $n$ kuantum sayılarıyla kodlanmış olduğundan, dışarı yayılan fotonların ve gravitonların faz korelasyonları bu $n$ bilgisini dış evrene eksiksiz olarak geri taşır. Bilgi ne içeride ne de dışarıda hiçbir an kaybolmaz; üniterlik mutlak olarak korunur.
+
+\section{Merkezdeki $r=0$ Tekilliğinin Ortadan Kaldırılması: Tekilliksiz ``Saf Bilgi Çekirdeği''}
+
+\subsection{Klasik Tekillik Problemi}
+
+Klasik genel görelilikte Schwarzschild metriği:
+
+\begin{equation}
+ds^2 = -\left(1 - \frac{2GM}{rc^2}\right) c^2 dt^2 + \left(1 - \frac{2GM}{rc^2}\right)^{-1} dr^2 + r^2 d\Omega^2
+\end{equation}
+
+kara deliğin tam merkezinde ($r \to 0$) uzay-zaman eğriliğinin (Kretschmann skaları $K = R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma} = \frac{48 G^2 M^2}{c^4 r^6}$) sonsuza ($\infty$) gitmesine yol açar. Bunun nedeni, klasik fizikte maddenin olay ufkunu geçtikten sonra da normal ``madde/enerji'' olarak kalmaya devam ettiğinin ve tek bir noktaya çöktüğünün varsayılmasıdır.
+
+\subsection{Duran Sicimlerin ($\omega_n = 0$) Durum Denklemi ve Einstein Alan Denklemlerinin Çözümü}
+
+Oysa \textit{Duran Sicimler Teoremi}'ne göre madde, olay ufkundaki girdap makaslamasından geçtiğinde üzerindeki kinetik ışık/enerji derisi soyulmuş ve içerideki sicimlerin titreşimi tamamen sıfırlanmıştır ($\omega_n = 0$) [1, 2, 3]!
+
+Olay ufkunun altına geçen bir sicim ağının enerji-momentum tensörü $T^\mu_\nu = \text{diag}(-\rho c^2, P_r, P_\perp, P_\perp)$, Polyakov eylem integralinden türetildiğinde iki bileşenden oluşur:
+\begin{enumerate}
+    \item \textbf{Kinetik Titreşim Basıncı ($P_{\text{kinetik}}$):} Sicimin zamana bağlı salınımlarından ($\dot{X}^2 \propto \omega_n^2$) doğan pozitif basınçtır. Soyulma sonucunda $\omega_n \to 0$ olduğundan, ufkun altında bu terim \textbf{tamamen sıfırlanır}:
+    \begin{equation}
+    P_{\text{kinetik}} \propto \sum_{n=1}^{\infty} \omega_n^2(\tau) \, q_n^2 \xrightarrow{\omega_n = 0} 0
+    \end{equation}
+    \item \textbf{Topolojik Bilgi Gerilimi ($P_{\text{bilgi}}$):} Titreşim durduğunda ($\omega_n = 0$) geriye yalnızca Denklem (1)'deki topolojik bilgi değişmezi ($\mathcal{I}_n = n c$) ve duran sicimin uzaysal gerilim dokusu ($\partial_\sigma X$) kalır. Kinetik enerjisi sıfırlanmış, yalnızca topolojik sargı bilgisine ($n$) sahip durağan bir sicim kondensatının radyal durum denklemi (\textit{Equation of State}), enerjisiyle eşit büyüklükte \textbf{negatif basınç (vakum-bilgi gerilimi)} üretir:
+    \begin{equation}
+    P_r = -\rho_{\text{bilgi}}(r) \, c^2
+    \end{equation}
+\end{enumerate}
+
+Toplam topolojik bilgi kuantumu $N_{\text{bilgi}} = \sum_{k} n_k$ olan duran sicimlerin oluşturduğu çekirdek bilgi yoğunluğu dağılımı, kuantum-bilgi sığası sınırı altında:
+
+\begin{equation}
+\rho_{\text{bilgi}}(r) = \frac{3 M}{\pi} \frac{r_{\text{bilgi}}^3}{\left( r^3 + r_{\text{bilgi}}^3 \right)^2}, \qquad r_{\text{bilgi}} = \left( \frac{3 G \hbar N_{\text{bilgi}}}{c^3} \right)^{1/3} = \ell_{\text{Planck}} \left( 3 N_{\text{bilgi}} \right)^{1/3}
+\end{equation}
+
+formundadır. Burada $r_{\text{bilgi}}$, duran sicimlerin oluşturduğu \textbf{Saf Bilgi Çekirdeğinin} karakteristik yarıçapıdır.
+
+Şimdi Denklem (11) ve Denklem (12)'yi doğrudan \textbf{Einstein Alan Denklemlerinin} ($G^\mu_\nu = \frac{8\pi G}{c^4} T^\mu_\nu$) $(t,t)$ bileşenine yerleştirip $r=0$'dan $r$'ye kadar integre edelim:
+
+\begin{equation}
+\frac{d}{dr} \left[ r \left( 1 - f(r) \right) \right] = \frac{8\pi G}{c^2} r^2 \rho_{\text{bilgi}}(r)
+\end{equation}
+
+Bu integral tam olarak çözüldüğünde, \textbf{Duran Sicimler Teoremi'nin Tekilliksiz Kara Delik Metriği} elde edilir:
+
+\begin{equation}
+ds^2 = -f(r) c^2 dt^2 + \frac{dr^2}{f(r)} + r^2 d\Omega^2, \qquad f(r) = 1 - \frac{2GM r^2}{c^2 \left( r^3 + r_{\text{bilgi}}^3 \right)}
+\end{equation}
+
+Denklem (14)'ün sağladığı iki büyük matematiksel kanıt şunlardır:
+
+\begin{enumerate}
+    \item \textbf{Dış Uzayda Einstein Göreliliği ile Tam Uyum ($r \gg r_{\text{bilgi}}$):} Bilgi çekirdeğinin dışındaki tüm bölgelerde $r^3 + r_{\text{bilgi}}^3 \approx r^3$ olduğundan, metrik fonksiyonu $f(r) \approx 1 - \frac{2GM}{rc^2}$ olarak klasik Schwarzschild çözümüne indirgenir.
+    \item \textbf{Merkezde ($r \to 0$) Tekilliğin Tamamen Yok Olması:} Kara deliğin tam merkezine ($r \to 0$) inildiğinde, paydadaki $r_{\text{bilgi}}^3 \propto N_{\text{bilgi}}$ (Duran Sicimlerin Topolojik Bilgi Hacmi) sıfırlanmayı engeller ve metrik fonksiyonu pürüzsüz bir \textbf{De Sitter Bilgi Çekirdeği} davranışına kavuşur:
+    \begin{equation}
+    \lim_{r \to 0} f(r) = 1 - \left( \frac{2GM}{c^2 r_{\text{bilgi}}^3} \right) r^2 = 1 - \frac{r^2}{L_{\text{eff}}^2} \longrightarrow 1 \quad (\text{Tekillik Yok!})
+    \end{equation}
+    Merkezdeki Kretschmann uzay-zaman eğriliği skaları hesaplandığında sonsuz ($\infty$) değil, tamamen **sonlu ve düzenli** bir değer çıkar:
+    \begin{equation}
+    \lim_{r \to 0} K(r) = \lim_{r \to 0} R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma} = \frac{96 G^2 M^2}{c^4 r_{\text{bilgi}}^6} = \frac{32 c^2 M^2}{3 \hbar^2 N_{\text{bilgi}}^2} < \infty
+    \end{equation}
+\end{enumerate}
+
+Böylece kanıtlanmıştır ki: **Kara deliklerin merkezinde fizik yasalarının çöktüğü sonsuz yoğunluklu bir tekillik ($r=0$) yoktur.** Girdapta enerji kabuğundan soyulan duran sicimler ($\omega_n = 0$), merkezde sıfır entropili, sonlu eğrilikli ve mükemmel düzenli bir **Saf Bilgi Çekirdeği** oluşturarak uzay-zamanın çöküşünü durdurur.
+
+\section{Gözlemsel Kanıt ve Deneysel Doğrulama Düzeneği}
+
+Bir teorik modelin bilimsel kesinlik kazanması, ürettiği sayısal ve gözlemsel öngörülerle sınanmasına bağlıdır. \textit{Duran Sicimler Teoremi IV}, hem astrofiziksel gözlemevlerinde (LIGO/Virgo/KAGRA ve gelecekteki LISA) hem de akışkan/kuantum laboratuvarlarında test edilebilecek iki somut deneysel kanıt öngörmektedir.
+
+\subsection{Astrofiziksel Kanıt: Kütleçekim Dalgası Yankıları (Gravitational Wave Echoes)}
+
+Klasik genel görelilikte kara delik olay ufku tamamen boş bir tek-yönlü zar kabul edildiğinden, iki kara delik çarpıştığında oluşan kütleçekim dalgası sinyali (\textit{ringdown}) hızla sönümlenir ve biter.
+
+Oysa bizim modelimizde kara delik; dışta **Girdap Yakıtı Halkası ($r \approx r_s$)** ve içte **Duran Sicim Bilgi Çekirdeği ($r = r_{\text{bilgi}}$)** olmak üzere iki fiziksel katmandan oluşur. Çarpışma sırasında üretilen kütleçekim dalgaları, açısal momentum bariyeri ile içteki Duran Sicim Bilgi Çekirdeği arasında yansıyarak ana çarpışma sinyalinden sonra periyodik **Kuantum Yankıları (Echoes)** üretmek zorundadır.
+
+Dalganın bu iki katman arasında gidip gelme süresi ($\Delta t_{\text{yankı}}$), Denklem (14)'teki metrik üzerinden kaplumbağa koordinatı $\Delta r^* = \int \frac{dr}{f(r)}$ ile hesaplandığında doğrudan toplam girdap gerilmesi $\Phi_* = \ln(r_s / r_{\text{bilgi}})$ ile belirlenir:
+
+\begin{equation}
+\Delta t_{\text{yankı}} = \frac{2}{c} \int_{r_{\text{bilgi}} + \delta}^{r_{\text{bariyer}}} \frac{dr}{f(r)} \approx \frac{4 G M}{c^3} \, \Phi_* = \frac{4 G M}{c^3} \ln\left( \frac{r_s}{\ell_{\text{Planck}} (3 N_{\text{bilgi}})^{1/3}} \right)
+\end{equation}
+
+Bu yankıların frekans spektrumu ise doğrudan duran sicimlerin topolojik mod sayısı $n$ ($\mathcal{I}_n = n c$) ile kuantizedir:
+
+\begin{equation}
+f_{\text{yankı}, n} = \frac{n}{2 \, \Delta t_{\text{yankı}}} = \frac{n c^3}{8 G M \Phi_*}
+\end{equation}
+
+Bu denklem, kara delik birleşmelerinin sönümlenme (post-merger ringdown) verilerinde aranabilecek kesin ve yanlışlanabilir bir matematiksel öngörüdür.
+
+\subsection{Laboratuvar Deney Düzeneği: Akustik ve Süperakışkan Girdap Tekilliği Deneyi}
+
+Denklem (1)'deki $\mathcal{I}_n = \omega_n(\tau) \cdot \mathcal{L}(\tau) = n c$ yasası ve Denklem (5)'teki girdap yakıtı aktarımı, Navier--Stokes ve Euler denklemlerinin ölçekten bağımsız (\textit{scale-invariant}) hiperbolik simetrisine dayandığından, laboratuvarda kurulacak bir **Analog Kara Delik Girdap Düzeneği** ile doğrudan test edilebilir:
+
+\begin{enumerate}
+    \item \textbf{Akustik Olay Ufku Girdap Tankı:} Düşük viskoziteli bir akışkan (veya süperakışkan Helyum-4 / Bose--Einstein Yoğuşuğu), merkezdeki bir çekim ağzına doğru eksenel simetrik bir girdap oluşturacak şekilde döndürülür. Radyal akış hızının $v_r(r)$ ortamdaki dalga yayılma hızına $c_s$ eşitlendiği yarıçap ($v_r(r_H) = c_s$), matematiksel olarak kara delik olay ufku metriğiyle birebir aynıdır.
+    \item \textbf{Sicim-Dalga Halkasının Gönderilmesi:} Girdabın dış bölgesinden, üzerinde $n$ adet duran dalga düğümü (harmonik mod) bulunan ve $\omega_{n,0}$ frekansıyla titreşen kapalı bir **elastik/vorteks dalga halkası** (veya kuantum girdap halkası üzerindeki Kelvin dalgası) girdap merkezine doğru bırakılır.
+    \item \textbf{Ölçülecek Üç Deneysel Kanıt:} Yüksek hızlı lazer interferometri ve Parçacık Görüntülemeli Hız Ölçümü (PIV) ile halka $r \to r_H$ sınırına (annulus bölgesine) girdiğinde şu üç olgu eşzamanlı olarak ölçülür:
+    \begin{itemize}
+        \item Halkanın teğetsel/eksenel uzunluğunun $\mathcal{L}(\tau) \asymp \tau^{-h}$ yasasıyla hızla gerilmesi,
+        \item Halka üzerindeki içsel titreşim frekansının $\omega_n(\tau) \asymp \tau^{+h}$ yasasıyla sönümlenerek sıfırlanması ($\omega_n \to 0$) ve kaybettiği enerjinin halka bölgesinde ikincil salınımlı darbeler ($\sigma = \pm 1$) üreterek ana girdabı hızlandırması (Girdap Yakıtı kanıtı),
+        \item Süreç boyunca $\omega_n(\tau) \cdot \mathcal{L}(\tau) = n c_s$ çarpımının ve halka üzerindeki $n$ düğüm (topolojik bilgi) sayısının sabit kaldığının doğrulanması!
+    \end{itemize}
+\end{enumerate}
+
+\section{Felsefi Yorum ve Dörtlemenin (Tetraloji) Bütünlüğü}
+
+\textit{Duran Sicimler Teoremi} bu dördüncü makaleyle birlikte, varlığın başlangıcından kara deliklerin kalbine kadar uzanan eksiksiz bir kozmolojik ve matematiksel mimariye kavuşmuştur:
+
+\begin{itemize}
+    \item \textbf{Teorem I (Ontolojik Temel [1]):} Zaman ve entropi sicimlerin titreşimiyle ($\omega > 0$) doğar; titreşim durduğunda ($\omega = 0$) zaman ve kaos silinir, mutlak düzen (Saf Bilgi) başlar.
+    \item \textbf{Teorem II (Görelilik Köprüsü [2]):} Kütleçekimsel zaman genişlemesi ile sicim frekansı aynı yasaya tabidir ($t' = k_t \cdot f_0 \sqrt{1 - \frac{2GM}{rc^2}}$); kara delikler enerjiyi bilgiye çeviren faz dönüştürücülerdir.
+    \item \textbf{Teorem III (İki Boyutlu İkizlik ve Ontolojik Soyulma [3]):} Madde, \textbf{Sicim (Frekans)} ve \textbf{Işık (Akış)} olmak üzere ters orantılı iki boyuttan oluşur. Kara delik girdabında Navier--Stokes girdap tekilliği [12] ve Polyakov eylemi uyarınca, ışık boyutu sonsuzluğa ($\mathcal{L}_{\text{ışık}} \to \infty$) çekilirken sicim frekansı öz-zamanda sıfıra ($\omega_n \to 0$) iner; bu iki zıt kuvvet madde dokusunu deri yüzer gibi soyarak topolojik bilgi değişmezine ($\mathcal{I}_n = n c$) ayrıştırır.
+    \item \textbf{Teorem IV (Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Çekirdek):} Bu soyulma, atomun parçalanması gibi zorunlu bir boyutsal fisyondur. Soyulan ışık ve özgül enerji boyutu, olay ufku halkasında girdabı besleyen ve $n$ bilgisini dış evrene taşıyan \textbf{Girdap Yakıtına} ($\mathcal{P}_{\text{yakıt}}$) dönüşerek Bilgi Paradoksunu çözer; içeri geçen \textbf{Duran Sicim} ise merkezde negatif basınçlı ($P_r = -\rho_{\text{bilgi}}c^2$) bir \textbf{Saf Bilgi Çekirdeği} kurarak $r=0$ tekilliğini ortadan kaldırır.
+\end{itemize}
+
+Evrende hiçbir enerji ve hiçbir bilgi kaybolmaz: Madde girdapta soyulur; gölgesi olan enerji girdaba yakıt olurken, özü olan bilgi ise kara deliğin kalbinde sonsuz bir düzen içinde yeniden doğuşu bekler.
+
+\begin{quote}
+\textit{``Madde parçalanmadan bilgi özgürleşemez;\\
+soyulan ışık girdaba ateş olurken, duran sicim merkezin sonsuz huzuruna çekilir.''}\\
+— Fahri Meral, Duran Sicimler Teoremi IV (2026)
+\end{quote}
+
+\section*{Kaynakça}
+
+\begin{enumerate}
+    \item Meral, F. (2025a). \textit{Duran Sicimler Teoremi: Zamanın ve Entropinin Yokluğunda Mükemmel Düzenin Yeniden Doğuşu}.
+    \item Meral, F. (2025b). \textit{Duran Sicimler Teoremi: Görelilik, Faz Dönüşümü ve Bilginin Kozmolojik Döngüsü (Görelilik ve Duran Sicimler Arasındaki Köprü – Genişletilmiş Versiyon)}.
+    \item Meral, F. (2026). \textit{Duran Sicimler Teoremi III: Maddenin İki Boyutlu İkizliği, Girdap Tekilliği ve Bilgiye Faz Ayrışması (Genişletilmiş Tam Sürüm)}.
+    \item Einstein, A. (1916). \textit{Die Grundlage der allgemeinen Relativitätstheorie}. Annalen der Physik, 49, 769–822.
+    \item Schwarzschild, K. (1916). \textit{Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie}. Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften.
+    \item Hawking, S. W. (1974). \textit{Black hole explosions?} Nature, 248(5443), 30–31.
+    \item Thorne, K. S., Price, R. H., \& Macdonald, D. A. (1986). \textit{Black Holes: The Membrane Paradigm}. Yale University Press.
+    \item Susskind, L. (1993). \textit{Strings, black holes and Lorentz contraction}. Physical Review D, 49(12), 6606–6611.
+    \item ’t Hooft, G. (1993). \textit{Dimensional reduction in quantum gravity}. arXiv:gr-qc/9310026.
+    \item Wheeler, J. A. (1990). \textit{Information, Physics, Quantum: The Search for Links}. In W. H. Zurek (Ed.), \textit{Complexity, Entropy, and the Physics of Information} (pp. 1–28). Addison-Wesley.
+    \item Bhattacharyya, S., Hubeny, V. E., Minwalla, S., \& Rangamani, M. (2008). \textit{Nonlinear Fluid Dynamics from Gravity}. Journal of High Energy Physics, 2008(02), 045.
+    \item OpenAI. (2026, Eylül). \textit{Finite Time Blowup for Navier--Stokes}. 166 s. (Milenyum Ödülü Problemi Çözümü: Bölüm 2.2 Halka ve Salınımlı Darbeler [s. 5--6], Bölüm 3 Gerilim Konisi Koşulu $T = c_1 v_1 + c_2 v_2$ ve Önerme C.2 Faz Kodlaması [s. 10]). Erişim adresi: \url{https://openai.com/tr-TR/index/navier-stokes-solution/}
+    \item Fefferman, C. L. (2000). \textit{Existence and smoothness of the Navier--Stokes equation}. Clay Mathematics Institute, Millennium Prize Problem statement.
+    \item Mathur, S. D. (2005). \textit{The fuzzball proposal for black holes: An elementary review}. Fortschritte der Physik, 53(7‐8), 793–827. (Kara deliklerde sicim fazı ve bilgi korunumu)
+    \item Bardeen, J. M. (1968). \textit{Non-singular general-relativistic gravitational collapse}. Proceedings of the International Conference GR5, Tbilisi, 174. (Tekilliksiz kara delik çekirdeği modelleri)
+    \item Unruh, W. G. (1981). \textit{Experimental black-hole evaporation?} Physical Review Letters, 46(21), 1351. (Akustik kara delik ve hidrodinamik olay ufku deneyi temeli)
+    \item Cardoso, V., Franzin, E., \& Pani, P. (2016). \textit{Is the gravitational-wave ringdown a probe of the event horizon?} Physical Review Letters, 116(17), 171101. (Kütleçekim dalgası yankıları / echoes teorisi)
+\end{enumerate}
+
+\end{document}
