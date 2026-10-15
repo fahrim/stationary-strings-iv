@@ -1,29 +1,32 @@
-# Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği
+# Stationary Strings Theorem IV: Cosmic Fission, Vortex Fuel and the Singularity-Free Information Core
+
+> **Türkçe:** [README_TR.md](./README_TR.md)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.YYYYYYY.svg)](https://doi.org/10.5281/zenodo.YYYYYYY)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-> **Durum:** Yayımlanmamış ön-baskı (preprint, v1, Ekim 2026; genişletilmiş tam sürüm). Hakem denetiminden geçmemiştir.
+> **Status:** Unpublished preprint (v1, October 2026; extended complete version). Not peer-reviewed.
 
-Serinin dördüncü halkası: boyutsal fisyonla soyulan Işık Boyutunun girdap yakıtına dönüşmesi
-($\mathcal{P}_{\text{yakıt}}$) ve Bilgi Paradoksunun çözümü; titreşimi sıfırlanan Duran Sicimlerin
-negatif basınçlı Saf Bilgi Çekirdeğiyle $r=0$ tekilliğini ortadan kaldırması; kuantum yankı
-($f_{\text{yankı},n}$) ve laboratuvar girdap deneyi öngörüleri. Makale Türkçe + İngilizce mevcuttur.
+Fourth link of the series: the Light Dimension stripped by dimensional fission turns into vortex fuel
+($\mathcal{P}_{\text{fuel}}$) feeding the vortex and resolving the Information Paradox; the incoming
+Stationary String establishes a negative-pressure Pure Information Core at the center, eliminating
+the $r=0$ singularity; quantum echo ($f_{\text{echo},n}$) and laboratory vortex experiment predictions.
+Paper available in Turkish and English.
 
-## Repo yapısı
+## Repository layout
 
 ```
 .
 ├── paper/
-│   ├── duran_sicimler_teoremi_IV.tex      # Makale kaynağı (Türkçe)
-│   ├── duran_sicimler_teoremi_IV.pdf     # Derlenmiş makale, TR (12 sayfa)
-│   ├── duran_sicimler_teoremi_IV_EN.tex  # Makale kaynağı (İngilizce)
-│   └── duran_sicimler_teoremi_IV_EN.pdf  # Derlenmiş makale, EN (13 sayfa)
+│   ├── duran_sicimler_teoremi_IV.tex      # Paper source (Turkish)
+│   ├── duran_sicimler_teoremi_IV.pdf     # Compiled paper, TR (12 pages)
+│   ├── duran_sicimler_teoremi_IV_EN.tex  # Paper source (English)
+│   └── duran_sicimler_teoremi_IV_EN.pdf  # Compiled paper, EN (13 pages)
 ├── CITATION.cff
 └── LICENSE
 ```
 
-## Derleme
+## Compiling
 
 ```bash
 cd paper
@@ -31,18 +34,18 @@ pdflatex -interaction=nonstopmode duran_sicimler_teoremi_IV.tex
 pdflatex -interaction=nonstopmode duran_sicimler_teoremi_IV_EN.tex
 ```
 
-## Atıf
+## Citation
 
 ```bibtex
 @misc{meral2026duranIV,
   author = {Fahri Meral},
-  title  = {Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği},
+  title  = {Stationary Strings Theorem IV: Cosmic Fission, Vortex Fuel and the Singularity-Free Information Core},
   year   = {2026},
   doi    = {10.5281/zenodo.YYYYYYY},
   url    = {https://github.com/fahrim/stationary-strings-iv}
 }
 ```
 
-## Lisans
+## License
 
-Makale metni (TR + EN): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — Fahri Meral (2026).
+Paper text (TR + EN): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — Fahri Meral (2026).
