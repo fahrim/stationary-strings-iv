@@ -1,6 +1,6 @@
 # Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.YYYYYYY.svg)](https://doi.org/10.5281/zenodo.YYYYYYY)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23408245.svg)](https://doi.org/10.5281/zenodo.23408245)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > **Durum:** Yayımlanmamış ön-baskı (preprint, v1, Ekim 2026; genişletilmiş tam sürüm). Hakem denetiminden geçmemiştir.
@@ -38,7 +38,7 @@ pdflatex -interaction=nonstopmode duran_sicimler_teoremi_IV_EN.tex
   author = {Fahri Meral},
   title  = {Duran Sicimler Teoremi IV: Kozmik Fisyon, Girdap Yakıtı ve Tekilliksiz Bilgi Çekirdeği},
   year   = {2026},
-  doi    = {10.5281/zenodo.YYYYYYY},
+  doi    = {10.5281/zenodo.23408245},
   url    = {https://github.com/fahrim/stationary-strings-iv}
 }
 ```
